@@ -1,5 +1,5 @@
 # Muzcat - каталог музыкальных альбомов.
-![CI](https://github.com/RuslanSibgatulin/Muzcat/actions/workflows/test.yml/badge.svg)
+![CI](https://github.com/RuslanSibgatulin/Music_catalog/actions/workflows/test.yml/badge.svg)
 
 ## [Постановка задачи](./task.md)
 
