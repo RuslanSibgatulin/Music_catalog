@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .views import SongListAPIView, SingerListAPIView, AlbumListAPIView
+from .views import AlbumListAPIView, SingerListAPIView, SongListAPIView
 
 app_name = "albums_api"
 

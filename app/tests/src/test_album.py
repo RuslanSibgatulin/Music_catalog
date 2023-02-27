@@ -1,8 +1,8 @@
 from http import HTTPStatus
-import pytest
 
+import pytest
+from albums.models import Album, Singer, Song
 from rest_framework.test import APIClient
-from albums.models import Song, Singer, Album
 
 
 @pytest.mark.django_db

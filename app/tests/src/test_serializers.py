@@ -1,4 +1,5 @@
-from albums.serializers import SongSerializer, SingerSerializer, AlbumSerializer
+from albums.serializers import (AlbumSerializer, SingerSerializer,
+                                SongSerializer)
 
 
 def test_SongSerializer():
