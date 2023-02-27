@@ -37,3 +37,6 @@ lint:
 		isort app/
 		flake8 app/ --show-source
 		mypy app/ --ignore-missing-imports --no-strict-optional --exclude /migrations/ --exclude /tests/
+
+test:
+		cd app/tests && pytest . -vs
