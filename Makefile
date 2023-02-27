@@ -19,6 +19,10 @@ init:  ## First and full initialization. Create database, superuser and collect 
 		docker exec -it muzcat_django bash -c \
 		'python manage.py migrate && python manage.py createsuperuser --noinput && python manage.py collectstatic --noinput'
 
+loaddata:  ## Load demo data
+		docker exec -it muzcat_django bash -c \
+		'python manage.py loaddata demo/demo_data.json'
+
 migrate:
 		cd app && \
 		python manage.py makemigrations --settings=config.settings_dev && \
