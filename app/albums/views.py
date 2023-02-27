@@ -4,21 +4,21 @@ from .serializers import SongSerializer, SingerSerializer, AlbumSerializer
 from rest_framework.filters import SearchFilter
 
 
-class SongListAPIView(generics.ListCreateAPIView):
+class SongListAPIView(generics.ListAPIView):
     queryset = Song.objects.all().order_by("name")
     serializer_class = SongSerializer
     filter_backends = [SearchFilter]
     search_fields = ["name", ]
 
 
-class SingerListAPIView(generics.ListCreateAPIView):
+class SingerListAPIView(generics.ListAPIView):
     queryset = Singer.objects.all().order_by("name")
     serializer_class = SingerSerializer
     filter_backends = [SearchFilter]
     search_fields = ["name", ]
 
 
-class AlbumListAPIView(generics.ListCreateAPIView):
+class AlbumListAPIView(generics.ListAPIView):
     queryset = Album.objects.all().order_by("name")
     serializer_class = AlbumSerializer
     filter_backends = [SearchFilter]
