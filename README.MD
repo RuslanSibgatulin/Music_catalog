@@ -1,5 +1,6 @@
-# Muzcat - каталог музыкальных альбомов.
+# Muzcat - музыкальный каталог.
 ![CI](https://github.com/RuslanSibgatulin/Music_catalog/actions/workflows/test.yml/badge.svg)
+
 
 ## [Постановка задачи](./task.md)
 
@@ -12,7 +13,7 @@
 
 # Запуск приложения
 ## Клонировать репозиторий
-    git@github.com:RuslanSibgatulin/Muzcat.git
+    git clone https://github.com/RuslanSibgatulin/Music_catalog.git
 
 ## Переменные окружения
 Подготовить файлы с переменными окружения по аналогии с файлами `docker/envs/*.example` и пересохранить в файлы `*.env`
